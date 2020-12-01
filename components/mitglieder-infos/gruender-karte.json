@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_mitglieder_infos_gruender_kartes",
+  "info": {
+    "name": "GründerKarte",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Bild": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Zitat": {
+      "type": "string",
+      "required": true,
+      "maxLength": 170
+    },
+    "Musiker": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    },
+    "Location": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

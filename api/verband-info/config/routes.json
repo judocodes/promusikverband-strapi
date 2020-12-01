@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/verband-info",
+      "handler": "verband-info.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/verband-info",
+      "handler": "verband-info.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/verband-info",
+      "handler": "verband-info.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

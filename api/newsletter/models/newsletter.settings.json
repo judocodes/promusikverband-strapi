@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "newsletters",
+  "info": {
+    "name": "Newsletter",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "required": true
+    },
+    "SubHeading": {
+      "type": "text",
+      "required": true
+    },
+    "ButtonText": {
+      "type": "string",
+      "required": true
+    },
+    "backgroundImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

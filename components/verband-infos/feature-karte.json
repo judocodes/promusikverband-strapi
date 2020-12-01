@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_verband_infos_feature_kartes",
+  "info": {
+    "name": "FeatureKarte",
+    "icon": "calendar-check"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "required": true
+    },
+    "Text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

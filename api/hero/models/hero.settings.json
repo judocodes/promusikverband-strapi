@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "heros",
+  "info": {
+    "name": "Hero",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "required": true
+    },
+    "SubHeadingText": {
+      "type": "richtext",
+      "required": true
+    },
+    "HeroImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "HeadingHighlight": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

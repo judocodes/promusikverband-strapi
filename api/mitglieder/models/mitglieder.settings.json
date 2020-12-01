@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "mitglieders",
+  "info": {
+    "name": "Mitglieder",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "required": true
+    },
+    "SubHeading": {
+      "type": "text",
+      "required": true
+    },
+    "Gruender": {
+      "type": "component",
+      "repeatable": true,
+      "component": "mitglieder-infos.gruender-karte",
+      "required": true
+    }
+  }
+}

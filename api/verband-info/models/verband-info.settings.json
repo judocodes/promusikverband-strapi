@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "infos",
+  "info": {
+    "name": "Info",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "required": true
+    },
+    "SubHeading": {
+      "type": "text",
+      "required": true
+    },
+    "EinzelFeature": {
+      "type": "component",
+      "repeatable": true,
+      "component": "verband-infos.feature-karte"
+    },
+    "EinzelFeatureZwei": {
+      "type": "component",
+      "repeatable": true,
+      "component": "verband-infos.feature-karte",
+      "required": true
+    },
+    "EinzelFeatureDrei": {
+      "type": "component",
+      "repeatable": true,
+      "component": "verband-infos.feature-karte",
+      "required": true
+    }
+  }
+}
